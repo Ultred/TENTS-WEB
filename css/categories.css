@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+:root {
+  --color-main: #4291ff;
+  --color-black: #0a0a0a;
+  --color-white: #fafafa;
+  --color-green: #47ad23;
+  --color-mink: #db5959;
+  --secondary-color: #c6c6c6;
+  --secondary-main: #0f73ff;
+}
+body {
+  font-family: "Montserrat";
+}
+.ilae {
+  font-size: 20px;
+}
+/* Side Bar */
+.index-logo {
+  transition: all 0.2s ease;
+  height: 30px;
+}
+.sidebar {
+  z-index: 10;
+  transition: all 0.4s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: var(--color-main);
+}
+.sidebar.close {
+  width: 88px;
+}
+.sidebar.close .index-logo {
+  height: 21px;
+}
+.sidebar.close .menu-links {
+  padding: 0;
+}
+.sidebar.close .menu-text {
+  transition: all 0.4s ease;
+  display: none;
+}
+.sidebar.close .navlink {
+  padding-left: 32px;
+}
+.sidebar.close .bottom-content {
+  left: 0;
+  width: 100%;
+}
+.sidebar.close .toggle {
+  top: 190%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.sidebar-cont {
+  height: 100%;
+  position: relative;
+}
+.sidebar-container-up {
+  position: relative;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.toggle {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  outline: var(--color-white) 4px solid;
+  padding: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150%;
+  right: -10px;
+}
+.sidebar-menu {
+  color: var(--color-white);
+  margin-top: 3rem;
+}
+.navlink {
+  transition: all 0.2s ease;
+  padding: 0.2rem 0;
+  height: 50px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navlink a {
+  color: var(--color-white);
+  gap: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+}
+.menu-text {
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  transition: all 0.4s ease;
+}
+.navlink:hover {
+  transition: 0.5s;
+  background-color: var(--secondary-main);
+}
+.bottom-content {
+  position: absolute;
+  bottom: 8%;
+  left: 16%;
+  width: 84%;
+}
+/*  */
+.input-data {
+  position: relative;
+}
+.input-field {
+  padding: 18px 0 4px 0.6rem;
+  width: 100%;
+  height: 26px;
+  font-size: 1.1rem;
+  border: 0.5px solid #c8c8c8;
+  border-radius: 5px;
+}
+.input-field1 {
+  padding: 18px 0 9px 0.6rem;
+  width: 350px;
+  font-size: 1.1rem;
+  border: 0.5px solid #c8c8c8;
+  border-radius: 5px;
+}
+.input-field:focus ~ .label-text,
+.input-field:valid ~ .label-text,
+.input-field1:focus ~ .label-text,
+.input-field1:valid ~ .label-text {
+  transform: translateY(-20px);
+  font-size: 13px;
+  opacity: 0.7;
+  color: var(--color-main);
+}
+/* Reusable------------------ */
+/* Button */
+.buttongreen {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 0.9em 2em;
+  background-color: var(--color-green);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+.buttongreen:hover {
+  background-color: #29740e;
+}
+.buttonmink {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--color-white);
+  font-weight: 700;
+  padding: 0.9em 2em;
+  background-color: var(--color-mink);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+/* Flexxx */
+.flex {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
+.flex1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0 1rem;
+  border: 0.5px solid #c8c8c8;
+  border-radius: 5px;
+}
+/* Grid */
+.grid-descrip {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+}
+.grid-1 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.grid-2 {
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+}
+.grid-3 {
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+.section-grid {
+  display: grid;
+  gap: 1.1rem;
+  grid-template-columns: 90px 271px 271px 110px;
+  grid-template-rows: 50px 50px 50px;
+}
+
+/* Font */
+.title1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: var(--color-main);
+  letter-spacing: 0.2px;
+}
+.paragraph1 {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  white-space: nowrap;
+  color: var(--secondary-color);
+  letter-spacing: 0.1px;
+}
+/* Calendar */
+.calendar {
+  padding: 8px;
+  background: var(--color-white);
+  border-radius: 4px;
+  font-size: 18px;
+  border: 1px solid #333333;
+  box-shadow: 0px 20px 40px rgba(59, 60, 56, 0.05);
+}
+.ui-datepicker {
+  background: var(--color-white);
+  border-radius: 15px;
+}
+.ui-datepicker-header {
+  height: 50px;
+  line-height: 50px;
+  color: var(--color-white);
+  background: var(--color-main);
+  margin-bottom: 10px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 20px;
+  height: 20px;
+  text-indent: 9999px;
+  border-radius: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  margin-top: 12px;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 12px;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 12px;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid var(--color-white);
+  border-bottom: 2px solid var(--color-white);
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #333333;
+}
+.ui-datepicker-title {
+  text-align: center;
+  font-size: 25px;
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 40px;
+  color: var(--color-main);
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.ui-state-default {
+  display: block;
+  text-decoration: none;
+  color: #333333;
+  line-height: 40px;
+  font-size: 16px;
+}
+.ui-state-default:hover {
+  color: var(--color-white);
+  background: var(--color-main);
+  border-radius: 50px;
+  transition: all 0.25s cubic-bezier(0.7, -0.12, 0.2, 1.12);
+}
+.ui-state-active {
+  color: var(--color-white);
+  background-color: var(--color-main);
+  border-radius: 50px;
+}
+.ui-datepicker-unselectable .ui-state-default {
+  color: #eee;
+  border: 2px solid transparent;
+}
+.icon-calendar {
+  margin-left: -30px;
+  margin-top: -26px;
+  position: relative;
+  color: var(--color-main);
+  font-size: 20px;
+}
+.custom-time-input::placeholder {
+  color: transparent;
+}
+
+/* -------------------Calendar -End */
+
+.flex input[type="file"] {
+  display: none;
+}
+.label-text {
+  transition: all ease 0.4s;
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  pointer-events: none;
+  color: var(--color-black);
+}
+.label-text1 {
+  padding-right: 10px;
+  background-color: var(--color-white);
+}
+.label {
+  display: block;
+  position: relative;
+  color: var(--color-white);
+  width: 100px;
+  text-align: center;
+  padding: 1rem 0;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+/* Section---Categories */
+.section-all {
+  transition: all 0.4s ease;
+  padding: 5px 0px 0 290px;
+}
+.section-all.close {
+  padding: 5px 0px 0 120px;
+}
+.sectionall-flex {
+  justify-content: space-between;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.sectionall-box {
+  gap: 2rem;
+  display: flex;
+}
+.sectionall-box img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  color: var(--color-white);
+  background-color: var(--secondary-main);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-content {
+  margin-top: 30px;
+}
+/* Event--------------- */

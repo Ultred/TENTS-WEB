@@ -1,0 +1,66 @@
+/* 
+
+FOR DYNAMIC WEB
+MEDIA QUERIES
+
+*/
+
+@media (min-width: 769px) {
+  .header,
+  .index-nav {
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .header {
+      width: 80%;
+      margin: 0 auto;
+      max-width: 1150px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1025px) {
+  ul {
+    padding: 0;
+  }
+
+  .index-logo {
+    padding-top: 5px;
+    margin-right: 0px;
+  }
+}
+
+/* Side navigation (login) */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 785px) {
+  /* ABOUT */
+  .company {
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Banner --- Index */
+  .banner {
+    padding: 0;
+  }
+}
