@@ -32,21 +32,18 @@
                 >
               </li>
               <li class="navlink">
-                <a href="#"
-                  ><i class="fa-solid fa-user-group"></i
-                  ><span class="menu-text"> Rounds</span></a
+                <a href="Tents-Rounds.php"
+                  ><i class="fa-solid fa-arrow-trend-up"></i><span class="menu-text"> Rounds</span></a
+                >
+              </li>
+              <li class="navlink">
+                <a href="Tents-Criteria.php"
+                  ><i class="fa-solid fa-book"></i><span class="menu-text"> Criteria</span></a
                 >
               </li>
               <li class="navlink">
                 <a href="#"
-                  ><i class="fa-solid fa-user-group"></i
-                  ><span class="menu-text"> Criteria</span></a
-                >
-              </li>
-              <li class="navlink">
-                <a href="#"
-                  ><i class="fa-solid fa-user-group"></i
-                  ><span class="menu-text">Analytics</span></a
+                  ><i class="fa-solid fa-star"></i><span class="menu-text">Analytics</span></a
                 >
               </li>
             </ul>

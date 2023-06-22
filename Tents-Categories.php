@@ -13,6 +13,7 @@
   <body>
     <?php include 'component/sidebar.php'; ?>
     <section id="section-all" class="section-all">
+      <form action="">
       <div class="sectionall-flex">
         <h1 class="title1">Categories</h1>
         <i class="fa-solid fa-user profile"></i>
@@ -53,6 +54,7 @@
           <tbody></tbody>
         </table>
       </div>
+      </form>
     </section>
     <script src="js/sidebar.js"></script>
   </body>

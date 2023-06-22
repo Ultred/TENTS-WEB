@@ -34,24 +34,27 @@
             >
           </div>
           <div class="input-data">
-            <input class="input-field" type="text" required />
+            <input class="input-field input-width" type="text" required />
             <label class="label-text">First Name</label>
           </div>
           <div class="input-data">
-            <input class="input-field" type="text" required />
+            <input class="input-field input-width" type="text" required />
             <label class="label-text">Last Name</label>
           </div>
           <div class="input-data">
-            <input class="input-field" type="number" required />
+            <input class="input-field input-width1" type="number" required />
             <label class="label-text">Age</label>
           </div>
           <div class="input-data">
-            <input class="input-field" type="text" required />
-            <label class="label-text">Age</label>
+            <select name="gender" class="input-field input-width2"  id="mySelect">
+              <option disabled selected>Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
           </div>
           <div class="input-data">
-            <input class="input-field" type="text" required />
-            <label class="label-text">Organiztion </label>
+            <input class="input-field input-width3" type="text" required />
+            <label class="label-text">Organization </label>
           </div>
 
           <input type="submit" class="buttongreen" value="Add" />
